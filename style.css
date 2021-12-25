@@ -490,27 +490,47 @@ header .intro-info .intro h1 span {
 .contact-container .motive p {
   padding: 1rem;
 }
+.contact-container form label {
+  font-size: 1rem;
+  padding: 0.7rem 0 0.6rem 0;
+  display: inline-block;
+  font-family: "Mochiy Pop One", sans-serif;
+}
 
-.contact-container form input {
-  margin: 0.7rem 0 0.7rem 0;
-  padding: 0.5rem;
-  border-radius: 0.8rem;
-  border: none;
-  color: #646860;
+.contact-container form input:not([type="submit"]) {
+  width: 50vw;
+  padding: 0.7rem;
+  background-color: #0dc4a9;
+  color: #030a15;
+  border-radius: 0.5rem;
+  font-size: medium;
+  border: 2px solid aliceblue;
+}
+
+.contact-container form textarea {
+  width: 50vw;
+  max-width: 50vw;
+  padding: 0.7rem;
+  background-color: #0dc4a9;
+  color: #030a15;
+  border-radius: 0.5rem;
+  font-size: medium;
+  border: 2px solid aliceblue;
 }
 
 .contact-container form input[type="submit"] {
-  padding: 0.4rem 0.8rem;
-  background: #12ec12;
-  border: none;
+  padding: 0.6rem 2rem;
+  background-color: #073f92;
   border-radius: 0.5rem;
   color: white;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
+  margin: 1rem auto;
 }
 
 .contact-container form input:focus {
   border: 1px solid #12868a;
 }
+
 
 @media screen and (min-width: 620px) {
   .banner {
