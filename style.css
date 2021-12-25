@@ -397,11 +397,11 @@ header .intro-info .intro h1 span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
+  padding: 3rem;
 }
 
 .about-me div {
-  max-width: 30rem;
+  max-width: 37rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -416,10 +416,19 @@ header .intro-info .intro h1 span {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 2rem;
+    -webkit-transition: all 1000ms ease;
+  transition: all 1000ms ease;
 }
 
 .about-me div h2 {
   padding: 1rem;
+}
+.about-me:hover div {
+  border-top: 1px solid #12868a;
+  border-radius: 2rem;
+  -webkit-box-shadow: 2rem 2rem 1rem rgba(0, 0, 0, 0.5);
+          box-shadow: 2rem 2rem 1rem rgba(0, 0, 0, 0.5);
+  background: #171622;
 }
 
 .project-container {
