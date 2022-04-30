@@ -1,33 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy B-Day</title>
-    <style>
-      body{
-          background-image: url(./images/are\ suwar.png);
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/4c15033a42.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>SameerAlam</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Y1S9WXJ9L4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
       }
-        .p-cent{  
-            transform: translate(40%,20%) 
-        }
-        .sthrough{
-            color: burlywood;
-            text-decoration: line-through;
-        }
-        h1{
-            position: absolute;
-            z-index: 1050;
-            text-align: center;
-            width: 100vw;
-            color: rgb(255, 51, 0);
-        }
-    </style>
-</head>
-<body>
-   <div class="tenor-gif-embed p-cent" data-postid="23099693" data-share-method="host" data-aspect-ratio="1" data-width="50%"><a href="https://tenor.com/view/happy-birthday-gif-23099693">Happy Birthday GIF</a>from <a href="https://tenor.com/search/happy+birthday-gifs">Happy Birthday GIFs</a></div> 
-    <h1>HAppY B-Day <span class="sthrough">Pooja</span> ASif bhai </h1>
-   <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-</body>
+      gtag("js", new Date());
+
+      gtag("config", "G-Y1S9WXJ9L4");
+    </script>
+  </head>
+  <body>
+    <!-- home start -->
+    <header>
+      <aside>
+        <span class="ham"><i class="fas fa-hamburger"></i></span>
+        <div class="nav_items">
+          <span> <i class="fas fa-igloo"></i></span> <i class="tag">home</i>
+        </div>
+
+        <div class="nav_items1">
+          <a href="#project">
+            <span id="anmi"> <i class="fas fa-briefcase"></i></span
+          ></a>
+          <a href="#project"> <i class="tag1">projects</i></a>
+        </div>
+        <div class="nav_items2">
+          <a href="#ski"
+            ><span> <i class="fab fa-leanpub"></i></span
+            ><i class="tag2">skills</i></a
+          >
+        </div>
+        <div class="nav_items3">
+          <a href="#contact">
+            <span> <i class="fas fa-address-book"></i></span
+          ></a>
+          <a href="#contact"> <i class="tag3">contact</i></a>
+        </div>
+        <div class="contact-container">
+          <a href="https://github.com/alamsameer">
+            <span class="social-anmi"> <i class="fab fa-github"></i></span
+          ></a>
+          <a href="https://www.linkedin.com/in/sameer-alam-37a2701b5/">
+            <span class="social-anmi"> <i class="fab fa-linkedin"></i></span
+          ></a>
+
+          <a href="https://twitter.com/sameer_alam_">
+            <span class="social-anmi"> <i class="fab fa-twitter"></i></span
+          ></a>
+          <span class="social-anmi"> <i class="fab fa-instagram"></i></span>
+        </div>
+      </aside>
+      <main class="intro-info">
+        <figure class="intro-pic">
+          <img src="./images/sam_profile.jpg" alt="" />
+        </figure>
+        <div class="intro">
+          <h1 style="line-height: 1.7rem; text-align: center">
+            Hi! i am <span>sameer</span>
+          </h1>
+          <p style="text-align: center">
+            front-end Developer
+          </p>
+          <p class="banner">
+            I build interactive and responsive front-end site
+          </p>
+        </div>
+      </main>
+    </header>
+    <!-- home end -->
+    <section class="about-me">
+      <div>
+        <h2>About me</h2>
+        <p>
+          I am 3rd year student of mechanical enggineering,covid brought me an
+          oppurtunity to look ito IT industry and i started to looking for a
+          skill to learn ,web development caught my attention and gradually it
+          became my interest.
+        </p>
+        <p>
+          I work with Html ,CSS ,js and some front-end tool like SCSS,bootstrap
+          and Tailwind css
+        </p>
+      </div>
+    </section>
+    <!-- skills start  -->
+    <section class="skill-container" id="ski">
+      <h2>skills</h2>
+      <div class="skills">
+        <ul>
+          <li>
+            <span><i class="fab fa-html5 fa-2x"></i></span>
+          </li>
+          <li>
+            <span><i class="fab fa-css3-alt fa-2x"></i></span>
+          </li>
+          <li>
+            <span><i class="fab fa-js-square fa-2x"></i></span>
+          </li>
+          <li>
+            <span><i class="fab fa-git fa-2x"></i></span>
+          </li>
+          <li>
+            <span><i class="fab fa-bootstrap fa-2x"></i></span>
+          </li>
+          <!-- <li><span><img src="./images/tailwind.jpg" alt=""></span></li> -->
+        </ul>
+      </div>
+    </section>
+    <!-- skill end -->
+    <!-- project show start -->
+    <h2 style="text-align: center; padding: 1rem">Projects</h2>
+    <section class="project-container" id="project">
+      <div class="project">
+        <a href="https://thirsty-heyrovsky-53f593.netlify.app/">
+          <img src="./images/choclate-landing -page.png" alt=""
+        /></a>
+        <article class="detail">
+          <div>
+            <a
+              href="https://github.com/alamsameer/Re100Daysof-Code/tree/master/choco"
+              ><span><i class="fab fa-github"></i> source code</span></a
+            >
+            <a href=" https://thirsty-heyrovsky-53f593.netlify.app/">
+              <span>live</span></a
+            >
+          </div>
+        </article>
+      </div>
+      <div class="project">
+        <a href="https://zen-torvalds-c4c779.netlify.app/"
+          ><img src="./images/manage-landing-page.png" alt=""
+        /></a>
+        <article class="detail">
+          <div>
+            <a
+              href=" https://github.com/alamsameer/Re100Daysof-Code/tree/master/samMAnage"
+              ><span><i class="fab fa-github"></i> source code</span></a
+            >
+            <a href="https://zen-torvalds-c4c779.netlify.app/">
+              <span>live</span></a
+            >
+          </div>
+        </article>
+      </div>
+      <div class="project">
+        <a href="https://trusting-jackson-47a7f0.netlify.app/"
+          ><img src="./images/shopping-cart.png" alt=""
+        /></a>
+        <article class="detail">
+          <div>
+            <a
+              href="https://github.com/alamsameer/Re100Daysof-Code/tree/master/shopping-cart"
+            >
+              <span><i class="fab fa-github"></i> source code</span></a
+            >
+            <a href=" https://trusting-jackson-47a7f0.netlify.app/">
+              <span>live</span></a
+            >
+          </div>
+        </article>
+      </div>
+    </section>
+    <footer class="contact-container" id="contact">
+      <div class="motive">
+        <h1 style="text-align: center; line-height: 1.6">Now? Get in touch!</h1>
+        <p>
+          Currently i am in learning phase and i am looking for an internship to
+          gain more knowledge and experience in tech industry .
+        </p>
+      </div>
+     <form action="https://formspree.io/f/meqnkgrn"method="post">
+        <label for="name">Name</label><br />
+        <input type="text" id="name" required placeholder="your name" /><br />
+        <label for="email">E-mail</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="xyz@gmail.com"
+        /><br />
+        <label for="msg">message</label><br />
+        <textarea
+          name="msg"
+          id=""
+          cols="30"
+          rows="5"
+        ></textarea
+        ><br />
+        <input type="submit" value="contact" />
+      </form>
+    </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  </body>
 </html>
