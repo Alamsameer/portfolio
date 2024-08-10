@@ -27,6 +27,13 @@
   </head>
   <body>
     <!-- home start -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">
+          <img src="./images/logo.jpg" class="logo" alt="Sameer Logo" />
+        </a>
+      </div>
+    </nav>
     <header>
       <aside>
         <div class="contact-container">
@@ -43,145 +50,56 @@
           <span class="social-anmi"> <i class="fab fa-instagram"></i></span>
         </div>
       </aside>
-      <main class="intro-info">
-        <div class="intro">
-          <h1 style="line-height: 1.7rem; text-align: center">
-            Hi! i am <span>sameer</span>
-          </h1>
-          <p style="text-align: center">
-            front-end Developer
-          </p>
-          <p class="banner">
-            I build interactive and responsive front-end site
-          </p>
-          <p class="banner" style="color: rgb(187, 187, 49); padding: 12px;">
-            site under construction
-          </p>
-        </div>
-      </main>
+
+      <div class="header-container">
+        <main class="intro-info">
+          <div class="intro">
+            <h1 style="line-height: 1.7rem; text-align: center">
+              Hi! i am <span>sameer</span>
+            </h1>
+            <p style="text-align: center">front-end Developer</p>
+            <p class="banner">
+              I build interactive and responsive front-end site
+            </p>
+          </div>
+        </main>
+      </div>
     </header>
     <!-- home end -->
-    <!-- <section class="about-me">
-      <div>
-        <h2>About me</h2>
-        <p>
-          I am 3rd year student of mechanical enggineering,covid brought me an
-          oppurtunity to look ito IT industry and i started to looking for a
-          skill to learn ,web development caught my attention and gradually it
-          became my interest.
-        </p>
-        <p>
-          I work with Html ,CSS ,js and some front-end tool like SCSS,bootstrap
-          and Tailwind css
-        </p>
+    <!-- Projects Section Start -->
+
+    <!-- Projects Section Start -->
+    <section class="projects">
+      <div class="project-binder">
+        <h2>Projects</h2>
+        <div class="project-container">
+          <!-- project start 1 -->
+          <div class="project">
+            <p>Website</p>
+            <div class="project-info-container">
+              <div class="project-info">
+                <h4>Space-Tour</h4>
+              </div>
+              <div class="project-status live">Live</div>
+              <div class="project-links">
+                <a
+                  href="https://vigilant-montalcini-ae42c2.netlify.app/index.html"
+                  target="_blank"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a
+                  href="https://github.com/alamsameer/Re100Daysof-Code"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Add more projects here -->
+        </div>
       </div>
     </section>
-    skills start  
-    <section class="skill-container" id="ski">
-      <h2>skills</h2>
-      <div class="skills">
-        <ul>
-          <li>
-            <span><i class="fab fa-html5 fa-2x"></i></span>
-          </li>
-          <li>
-            <span><i class="fab fa-css3-alt fa-2x"></i></span>
-          </li>
-          <li>
-            <span><i class="fab fa-js-square fa-2x"></i></span>
-          </li>
-          <li>
-            <span><i class="fab fa-git fa-2x"></i></span>
-          </li>
-          <li>
-            <span><i class="fab fa-bootstrap fa-2x"></i></span>
-          </li>
-           <li><span><img src="./images/tailwind.jpg" alt=""></span></li> 
-        </ul>
-      </div>
-    </section>
-    <h2 style="text-align: center; padding: 1rem">Projects</h2>
-    <section class="project-container" id="project">
-      <div class="project">
-        <a href="https://thirsty-heyrovsky-53f593.netlify.app/">
-          <img src="./images/choclate-landing -page.png" alt=""
-        /></a>
-        <article class="detail">
-          <div>
-            <a
-              href="https://github.com/alamsameer/Re100Daysof-Code/tree/master/choco"
-              ><span><i class="fab fa-github"></i> source code</span></a
-            >
-            <a href=" https://thirsty-heyrovsky-53f593.netlify.app/">
-              <span>live</span></a
-            >
-          </div>
-        </article>
-      </div>
-      <div class="project">
-        <a href="https://zen-torvalds-c4c779.netlify.app/"
-          ><img src="./images/manage-landing-page.png" alt=""
-        /></a>
-        <article class="detail">
-          <div>
-            <a
-              href=" https://github.com/alamsameer/Re100Daysof-Code/tree/master/samMAnage"
-              ><span><i class="fab fa-github"></i> source code</span></a
-            >
-            <a href="https://zen-torvalds-c4c779.netlify.app/">
-              <span>live</span></a
-            >
-          </div>
-        </article>
-      </div>
-      <div class="project">
-        <a href="https://trusting-jackson-47a7f0.netlify.app/"
-          ><img src="./images/shopping-cart.png" alt=""
-        /></a>
-        <article class="detail">
-          <div>
-            <a
-              href="https://github.com/alamsameer/Re100Daysof-Code/tree/master/shopping-cart"
-            >
-              <span><i class="fab fa-github"></i> source code</span></a
-            >
-            <a href=" https://trusting-jackson-47a7f0.netlify.app/">
-              <span>live</span></a
-            >
-          </div>
-        </article>
-      </div>
-    </section>
-    <footer class="contact-container" id="contact">
-      <div class="motive">
-        <h1 style="text-align: center; line-height: 1.6">Now? Get in touch!</h1>
-        <p>
-          Currently i am in learning phase and i am looking for an internship to
-          gain more knowledge and experience in tech industry .
-        </p>
-      </div>
-     <form action="https://formspree.io/f/meqnkgrn"method="post">
-        <label for="name">Name</label><br />
-        <input type="text" id="name" required placeholder="your name" /><br />
-        <label for="email">E-mail</label><br />
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
-          placeholder="xyz@gmail.com"
-        /><br />
-        <label for="msg">message</label><br />
-        <textarea
-          name="msg"
-          id=""
-          cols="30"
-          rows="5"
-        ></textarea
-        ><br />
-        <input type="submit" value="contact" />
-      </form>
-    </footer> 
-    Global site tag (gtag.js) - Google Analytics 
   </body>
 </html>
