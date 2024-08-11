@@ -97,9 +97,7 @@ const projectData = {
   ]
 }
 
-// ham.addEventListener("click",()=>{
-//     aside.classList.toggle("show")
-// })
+
 
 projectData.projects.forEach(project=>{
     console.log(project);
