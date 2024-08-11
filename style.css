@@ -54,7 +54,31 @@ border-radius:50%;
   font-size: 1rem;
   text-align: center;
 }
+header .intro-info .intro h1{
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+header .intro-info .intro h1 span {
+  font-size: 1.4rem;
+  background: -webkit-gradient(linear, left top, right top, from(#0ed2f7), to(#ee2450));
+  background: linear-gradient(to right, #0ed2f7, #ee2450);
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background: whatever;
+  color: #12868a;
+}
+
 @media screen and (min-width: 768px) {
+  header .intro-info .intro h1{
+    font-size: 2rem;
+
+  }
+  header .intro-info .intro h1 span {
+    font-size: 2rem;
+  }
   .banner {
     font-size: 1.5rem;
     line-height: 2.5rem;
@@ -165,29 +189,15 @@ header aside .contact-container {
   .header-container {
     margin: 0 auto;
     width: 70%;
-    padding: 1rem 4rem;
+    padding: 5rem 4rem;
     display: flex;
     justify-content:center;
     align-items: center;
   }
 }
 
-header .intro-info .intro h1{
-  font-size: 1.4rem;
-  font-weight: bold;
-}
 
-header .intro-info .intro h1 span {
-  font-size: 1.4rem;
-  background: -webkit-gradient(linear, left top, right top, from(#0ed2f7), to(#ee2450));
-  background: linear-gradient(to right, #0ed2f7, #ee2450);
-  background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background: whatever;
-  color: #12868a;
-}
+
 
 .projects {
   padding: 2rem;
@@ -206,7 +216,7 @@ header .intro-info .intro h1 span {
 }
 @media screen and (min-width: 768px) {
   .project-binder {
-    width: 70%;
+    width: 50%;
   }
 }
 .projects h2 {
@@ -328,3 +338,69 @@ header .intro-info .intro h1 span {
 
 }
 
+
+
+.project-sample-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+
+.full-image-container {
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  overflow: hidden;
+  position: relative;
+}
+
+.full-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease;
+}
+
+.thumbnail-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  display: flex;
+  justify-content: space-around;
+  visibility: hidden;
+  transition: visibility 0.5s ease, height 0.5s ease;
+}
+
+.thumbnail {
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.thumbnail:hover {
+  opacity: 1;
+}
+
+.project-sample-container:hover .thumbnail-container {
+  height: 30%;
+  visibility: visible;
+}
+
+/* .project-sample-container:hover .full-image-container {
+  padding-top: 70%;
+} */
+
+.project-container:hover .full-image {
+  opacity: 0.7;
+}
