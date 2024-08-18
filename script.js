@@ -3,13 +3,13 @@ const aside =document.querySelector("aside")
 const projectContainer=document.querySelector(".project-container")
 const projectData = {
   "projects": [
-    {
-      "name": "Shoppingify Website",
-      "type": "Live Website",
-      "status": "live",
-      "project_link": "https://shoppingify-frontend-o6j18g1s8-samcodys-projects.vercel.app/",
-      "github_link": "https://github.com/alamsameer/Re100Daysof-Code"
-    },
+    // {
+    //   "name": "Shoppingify Website",
+    //   "type": "Live Website",
+    //   "status": "live",
+    //   "project_link": "https://shoppingify-frontend-o6j18g1s8-samcodys-projects.vercel.app/",
+    //   "github_link": "https://github.com/alamsameer/Re100Daysof-Code"
+    // },
     {
       "name": "Kanban App",
       "type": "Live Website",
@@ -154,3 +154,18 @@ projectData.projects.forEach(project=>{
 //     });
 //   });
   
+document.addEventListener("DOMContentLoaded", function() {
+  const video = document.getElementById("project-video");
+
+  const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              video.play();
+          } else {
+              video.pause();
+          }
+      });
+  });
+
+  observer.observe(video);
+});
